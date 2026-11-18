@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fundo</title>
+<meta name="apple-mobile-web-app-title" content="Fundo">
+<meta name="theme-color" content="#060C1A">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-1024.png">
+<script>
+  // Ziel: das Fundo-Artifact auf claude.ai
+  var ZIEL = "https://claude.ai/artifact/1KYrTX7ijvcKH2ovYLQjo6";
+  // Mit ?setup bleibt die Seite stehen (zum Hinzufügen). Danach wird ?setup
+  // aus der Adresse entfernt, damit das Home-Bildschirm-Symbol direkt weiterleitet.
+  var setup = /[?&]setup\b/.test(location.search);
+  if (setup) { history.replaceState(null, "", location.pathname); }
+  else { location.replace(ZIEL); }
+</script>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+       background:#060C1A;color:#EEF3FA;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:24px 16px;box-sizing:border-box}
+  main{max-width:420px;text-align:center}
+  img{width:96px;height:96px;border-radius:22px}
+  h1{margin:16px 0 8px;font-size:28px}
+  ol{text-align:left;color:#93A1B8;padding-left:20px}
+  b{color:#EEF3FA}
+  a.btn{display:inline-block;margin-top:16px;padding:12px 22px;border-radius:999px;background:#309BD0;color:#060C1A;font-weight:600;text-decoration:none}
+</style>
+</head>
+<body>
+<main>
+  <img src="apple-touch-icon.png" alt="">
+  <h1>Fundo</h1>
+  <p>So kommt Fundo mit eigenem Logo auf den Home-Bildschirm:</p>
+  <ol>
+    <li>Unten auf <b>Teilen</b> tippen.</li>
+    <li><b>Zum Home-Bildschirm</b> wählen.</li>
+    <li><b>„Als Web-App öffnen“ ausschalten</b>, damit Fundo in Safari aufgeht, wo du schon angemeldet bist.</li>
+    <li><b>Hinzufügen</b> tippen.</li>
+  </ol>
+  <a class="btn" href="https://claude.ai/artifact/1KYrTX7ijvcKH2ovYLQjo6">Fundo jetzt öffnen</a>
+</main>
+</body>
+</html>
